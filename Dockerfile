@@ -33,7 +33,8 @@ RUN \
 	echo "**** install dependencies for plugin: misc ****" && \
 	pip install --upgrade \
 		deluge-client \
-		irc_bot && \
+		irc_bot \
+		subliminal && \
 	echo "**** install flexget ****" && \
 	apk add --no-cache --virtual=build-deps gcc libxml2-dev libxslt-dev libc-dev python3-dev jpeg-dev && \
 	pip install --upgrade --force-reinstall \
